@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <title>Formulário de contato com backend</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            
+        </div>
+        <div class="nav-links">
+            <a href="#">Característicos</a>
+            <a href="#">Como funciona</a>
+            <a href="#">Preços</a>
+            <a href="#">Documentação</a>
+        </div>
+        <div class="nav-buttons">
+            <a href="#" class="login-btn">Conecte-se</a>
+            <a href="#" class="try-btn">Experimente gratuitamente</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="left-section">
+            <h1>Entre em contato</h1>
+            <p class="subtitle">Estamos aqui para ajudar! Como podemos ajudar?</p>
+
+            <div class="form-container">
+                <h2>Deixe-nos uma mensagem</h2>
+                <form autocomplete="off" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Seu nome</label>
+                            <input type="text" name="name" id="name" required placeholder="Please enter your name"
+                                autocomplete="off">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <select name="subject" id="subject" required autocomplete="off">
+                                <option value="" disabled selected>Apenas dizendo oi</option>
+                                <option value="general">Consulta Geral</option>
+                                <option value="support">Apoiar</option>
+                                <option value="feedback">Opinião</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required placeholder="Please enter your email"
+                            autocomplete="off">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea name="message" id="message" required placeholder="Enter your message here"
+                            autocomplete="off"></textarea>
+                    </div>
+                    <button type="submit">Enviar mensagem</button>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="right-section">
+            <h2>Ou confira estes recursos</h2>
+
+            <div class="resource-card">
+                <div class="resource-icon slack-icon">
+                    <i class="fab fa-slack fa-2x" style="color:#611f69;"></i>
+                </div>
+                <div class="resource-content">
+                    <h3>Junte-se à nossa comunidade no Slack</h3>
+                    <p>Componentes populares da interface do usuário, como dicas de ferramentas, modais, cartões e pesquisas, estão lá para ajudar você.</p>
+                </div>
+            </div>
+
+            <div class="resource-card">
+                <div class="resource-icon docs-icon">
+                    <i class="fas fa-book fa-2x" style="color:#4263EB;"></i>
+                </div>
+                <div class="resource-content">
+                    <h3>Leia nossa documentação
+<p>Componentes populares da interface do usuário, como dicas de ferramentas, modais, cartões e pesquisas, estão lá para ajudar você.</p>
+                </div>
+            </div>
+
+            <div class="resource-card">
+                <div class="resource-icon support-icon">
+                    <i class="fas fa-headset fa-2x" style="color:#10B981;"></i>
+                </div>
+                <div class="resource-content">
+                    <h3>Contate o suporte</h3>
+                    <p>Precisa de ajuda? Nossa equipe de suporte está à disposição 24 horas por dia, 7 dias por semana, para ajudar você com qualquer problema ou dúvida.</p>
+                </div>
+            </div>
+
+            <div class="resource-card">
+                <div class="resource-icon video-icon">
+                    <i class="fas fa-circle-play fa-2x" style="color:#f59e42;"></i>
+                </div>
+                <div class="resource-content">
+                    <h3>Assista a tutoriais em vídeo</h3>
+                    <p>Aprenda como aproveitar ao máximo nossa plataforma com guias em vídeo passo a passo.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="success-message" class="hidden">
+        Mensagem enviada com sucesso!
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
